@@ -88,7 +88,7 @@ html {
         margin-top: 5rem;
     }
 
-    .email{
+    #email{
         width: 327px;
         height: 46px;
         background-color: var(--dark-gray);
@@ -166,7 +166,7 @@ html {
         margin: 0;
         
     }
-    .email{
+    #email{
        margin-top: 11px;
        width: 427px; 
        height: 56px;

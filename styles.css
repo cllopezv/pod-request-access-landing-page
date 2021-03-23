@@ -24,7 +24,6 @@ html {
 
   body{
       background-color: var(--dark);
-      overflow: hidden;
       color: #ffff;
       height: 100vh;
       font-size: 2.8rem;;
@@ -202,6 +201,9 @@ html {
 
 /* --------------------------------- Desktop -------------------------------- */
 @media (min-width: 1440px){
+    body{
+        overflow: hidden;
+    }
     body::after{
         display: none;
     }

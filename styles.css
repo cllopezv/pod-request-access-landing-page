@@ -75,6 +75,7 @@ html {
     }
     .podcasts img{
         width: 15%;
+        height: 15%;
         opacity: 0.4;
     }
 
@@ -186,6 +187,7 @@ html {
     }
     .podcasts img{
         width: 13%;
+        height: 13%;
         margin-right: 50px;
     }
     #text{

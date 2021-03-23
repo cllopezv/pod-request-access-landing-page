@@ -1,0 +1,225 @@
+/* --------------------------------- Globals -------------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+   
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  :root{
+      --primary-color: #54E6AF;
+      --dark-gray: #2C344B;
+      --dark: #121725;
+      --medium-gray: #5A668A;
+      --light-gray: #C2CBE5;
+      --hover-color: #B3FFE2
+  }
+
+  body{
+      background-color: var(--dark);
+      overflow: hidden;
+      color: #ffff;
+      height: 100vh;
+      font-size: 2.8rem;;
+      margin-top: 5.5rem;
+      text-align:center;
+  }
+
+  span{
+    color: var(--primary-color);
+}
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+/* ------------------------------ Mobile First ------------------------------ */
+
+  body::after {
+    content: "";
+    background: url('assets/mobile/image-host.jpg') no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .content{
+      margin: 20px;
+  }
+
+    h1{
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 3.8rem;
+    }
+    p{
+        font-weight: 300;
+        color: var(--light-gray);
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin-top: 1.5rem;
+    }
+    .podcasts{
+        display: flex;
+        justify-content: space-around;
+    }
+    .podcasts img{
+        width: 15%;
+        opacity: 0.4;
+    }
+
+    .flex-columns{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    form{
+        margin-top: 5rem;
+    }
+
+    .email{
+        width: 327px;
+        height: 46px;
+        background-color: var(--dark-gray);
+        border-radius: 25px;
+        border-color: transparent;
+        padding-left: 30px;
+        color: #fff;
+        font-weight: bold;
+        outline: none;
+        
+    }
+    .btn{
+        width: 327px;
+        height: 46px;
+        margin-top: 35px;
+        border-radius: 25px;
+        background-color: var(--primary-color);
+        border-color: transparent;
+        color: var(--dark);
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: var(--hover-color);
+    }
+    #text{
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 75px;
+        right: 23px;
+    }
+
+/* --------------------------------- Tablet --------------------------------- */
+@media (min-width: 768px){
+    body::after{
+        left:  51%;
+        opacity: 1;
+    }
+    section{
+        background: url(/assets/desktop/bg-pattern-dots.svg) no-repeat left bottom;
+        
+    }
+    .logo{
+        float: left;
+        padding-left: 25px;
+    }
+    .content{
+        margin: 106px 94px 257px 39px;
+        width: 635px;
+        height: 509px;
+        background-color: var(--dark);
+        border: 1px solid var(--dark);
+    }
+    h1{
+        margin-top: 93px;
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        text-align: left;
+    }
+    p{
+        margin-top: 31px;
+        text-align: left;
+        width: 445px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+    .flex-columns{
+        flex-direction: column-reverse; 
+        margin: 0;
+    }
+    form{
+        display: flex;
+        margin: 0;
+        
+    }
+    .email{
+       margin-top: 11px;
+       width: 427px; 
+       height: 56px;
+    }
+    .btn{
+        width: 162px;
+        margin: 0;
+        position: relative;
+        top: 16px;
+        right: 166px;
+        
+        
+    }
+    .podcasts{
+        margin-top: 64px;
+        justify-content: flex-start;
+    }
+    .podcasts img{
+        width: 13%;
+        margin-right: 50px;
+    }
+    #text{
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 82px;
+        right: 181px;
+    }
+
+    
+}
+
+/* --------------------------------- Desktop -------------------------------- */
+@media (min-width: 1440px){
+    body::after{
+        display: none;
+    }
+    
+    main{
+        background: url(/assets/desktop/image-host.jpg) no-repeat right 0;
+        margin-top: 120px;
+        margin-left: 118px;
+    }
+    section{
+        background: url(/assets/desktop/bg-pattern-dots.svg) no-repeat bottom 200px right;
+    }
+    .content{
+        margin-top: 76px;
+        
+    }
+    .podcasts img{
+        margin-right: 60px;
+    }
+}
+  

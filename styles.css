@@ -131,7 +131,7 @@ html {
         opacity: 1;
     }
     section{
-        background: url(/assets/desktop/bg-pattern-dots.svg) no-repeat left bottom;
+        background: url(assets/desktop/bg-pattern-dots.svg) no-repeat left bottom;
         
     }
     .logo{
@@ -207,12 +207,12 @@ html {
     }
     
     main{
-        background: url(/assets/desktop/image-host.jpg) no-repeat right 0;
+        background: url(assets/desktop/image-host.jpg) no-repeat right 0;
         margin-top: 120px;
         margin-left: 118px;
     }
     section{
-        background: url(/assets/desktop/bg-pattern-dots.svg) no-repeat bottom 200px right;
+        background: url(assets/desktop/bg-pattern-dots.svg) no-repeat bottom 200px right;
     }
     .content{
         margin-top: 76px;
